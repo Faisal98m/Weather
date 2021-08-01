@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="weat.css">
+</head>
+<body>
+    <nav>
+        <h1>Weather Dashboard</h1>
+    </nav>
+    <main>
+        <div class="row">
+            <section class="col-lg-2">    
+                <form action="#" id="city-selection-form">
+                    <h2>Search for a city:</h2>
+                    <input type="text" id="city-selection-input" required>
+                    <input type="submit" name="submit" id="submit" value="Search">
+                </form>
+                <div id="history">
+
+                </div>
+            </section>
+            <section class="col-lg-10" id="weatherCards">
+                <h2>Current Weather</h2>
+                <div id="currentWeather">
+                    <div id="forecast">
+                        <div class="card m-1 p-1 col-xl">
+                            <div class="card-body">
+                                <h3 class="card-title" data-attr="day-1"></h3>
+                                <h4 class="card-subtitle mb-2 text-muted" data-attr="date-1"></h4>
+                                <p><img class="centred-img" data-attr="weather-1"></p>
+                                <p>Temp: <span data-attr="temperature-1"></span></p>
+                            </div>
+                        </div>
+                
+                </div>
+                <h2>5 Day Forecast</h2>
+                <div id="forecast">
+                    <div class="card m-1 p-1 col-xl">
+                        <div class="card-body">
+                            <h3 class="card-title" data-attr="day-1"></h3>
+                            <h4 class="card-subtitle mb-2 text-muted" data-attr="date-1"></h4>
+                            <p><img class="centred-img" data-attr="weather-1"></p>
+                            <p>Temp: <span data-attr="temperature-1"></span></p>
+                        </div>
+                    </div>
+                    <div class="card m-1 p-1 col-xl">
+                        <div class="card-body">
+                            <h3 class="card-title" data-attr="day-1"></h3>
+                            <h4 class="card-subtitle mb-2 text-muted" data-attr="date-1"></h4>
+                            <p><img class="centred-img" data-attr="weather-1"></p>
+                            <p>Temp: <span data-attr="temperature-1"></span></p>
+                        </div>
+                    </div><div class="card m-1 p-1 col-xl">
+                        <div class="card-body">
+                            <h3 class="card-title" data-attr="day-1"></h3>
+                            <h4 class="card-subtitle mb-2 text-muted" data-attr="date-1"></h4>
+                            <p><img class="centred-img" data-attr="weather-1"></p>
+                            <p>Temp: <span data-attr="temperature-1"></span></p>
+                        </div>
+                    </div><div class="card m-1 p-1 col-xl">
+                        <div class="card-body">
+                            <h3 class="card-title" data-attr="day-1"></h3>
+                            <h4 class="card-subtitle mb-2 text-muted" data-attr="date-1"></h4>
+                            <p><img class="centred-img" data-attr="weather-1"></p>
+                            <p>Temp: <span data-attr="temperature-1"></span></p>
+                        </div>
+                    </div><div class="card m-1 p-1 col-xl">
+                        <div class="card-body">
+                            <h3 class="card-title" data-attr="day-1"></h3>
+                            <h4 class="card-subtitle mb-2 text-muted" data-attr="date-1"></h4>
+                            <p><img class="centred-img" data-attr="weather-1"></p>
+                            <p>Temp: <span data-attr="temperature-1"></span></p>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="./assets/js/api.js"></script>
+    <script src="./assets/js/view.js"></script>
+</body>
+</html>
